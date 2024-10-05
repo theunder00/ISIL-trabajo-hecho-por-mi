@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 14000px;
+}
+
+.logo img{
+    height: 70px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+}
+
+div ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+div ul li{
+    list-style-type: none;
+}
+
+.navbar ul, .navbar div:nth-child(2), .navbar div, .navbar .caja-3{
+    display: flex;
+    align-items: center;
+}
+
+.store{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 50px;
+    color: black;
+}
+
+.btn-1,.btn-2{
+    margin: 0 30px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    border: 1px solid;
+    padding: 15px 15px;
+    border-radius: 50px;
+}
+
+.btn-2{
+    color: white;
+    background-color: black;
+}
+
+.btn-1:hover{
+    background-color: rgba(128, 128, 128, 0.566);
+}
+
+.btn-2:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+
+.contenido .articles {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.contenido .articles img{
+    width: 50vw;
+    height: 50vw;
+}
+
+
+.contenido .texto{
+    text-align: center;
+    margin: 0.7%;
+}
+
+.texto h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.texto p{
+    font-size: 20px;
+    margin-bottom: 40px;
+   /* color: white;*/
+}
+
+.caja-footer{
+    padding: 40px 50px;
+}
+
+.caja-footer .social{
+    margin: 5px;
+}
+
+footer .social img{
+    width: 50px;
+}
+
+footer .social .icon{
+    width: 40px;
+    padding: 5px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+.social{
+    display: flex;
+}
+
+.caja-footer .social .icon:hover{
+    background-color: gray;
+}
+
+ .menu a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: black;
+    display: inline-block;
+}
+
+ .menu a:hover{
+    text-decoration: underline;
+}
+
+ .menu a:not(:first-child){
+    padding-left: 30px;
+    border-left: 2px solid black;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.pie img{
+    width: 150px;
+}
+
+.pie h5{
+    margin-left: 20px;
+}
+
+hr{
+    margin: 10px;
+}
+
+
+
+
+/*MENU*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "sidebar sidebar sidebar"
+                         "contenedores article article";
+}
+
+.parrafo{
+    grid-area: sidebar;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 0 100px;
+    height: 60px;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.parrafo a:first-child{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.parrafo a{
+    line-height: 60px;
+    color: black;
+    font-size: 14px;
+    margin-right: 0 30px;
+    text-decoration: none;
+}
+
+.sidebar{
+    grid-area: contenedores;
+    background-color: white;
+    padding: 80px 0 0 100px;
+    max-width: 300px;
+}
+
+.sidebar ul{
+    width: 140px;
+}
+
+.sidebar h3{
+    margin-bottom: 18px;
+    padding-top: 20px;
+    opacity: 0.6;
+}
+
+.sidebar a{
+    color: gray;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.sidebar a li{
+    padding: 10px 0;
+}
+
+.article{
+    grid-area: article;
+    background-color: white;
+    padding: 90px 200px 0 40px;
+}
+
+.article a{
+    color: black;
+    text-decoration: none;
+}
+
+.article figure{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.article .bebidas{
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.caja-grande{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+}
+
+
+.order-items div{
+    background-color: green;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.order-items{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.order-items div img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-items span{
+    font-weight: 500;
+    font-size: 20px;
+}
